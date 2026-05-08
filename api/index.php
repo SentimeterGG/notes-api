@@ -10,8 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
-require_once __DIR__ . '/routes/auth.php';
-require_once __DIR__ . '/routes/posts.php';
+require_once __DIR__ . '/../routes/auth.php';
+require_once __DIR__ . '/../routes/posts.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 $uri    = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
