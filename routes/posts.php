@@ -37,7 +37,7 @@ function handle_get_post(int $id): void
     $stmt->close();
 
     if (!$post) {
-        json_response(['message' => 'Post not found'], 404);
+        json_response(['message' => 'Post not found'], 204);
     }
 
     $post['id']     = (int)$post['id'];
