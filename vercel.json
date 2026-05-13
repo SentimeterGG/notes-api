@@ -9,5 +9,16 @@
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Connection",
+          "value": "close"
+        }
+      ]
+    }
   ]
 }
